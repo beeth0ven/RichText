@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		451052381C39FF3100404CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451052371C39FF3100404CFF /* AppDelegate.swift */; };
-		4510523A1C39FF3100404CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451052391C39FF3100404CFF /* ViewController.swift */; };
-		4510523D1C39FF3100404CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4510523B1C39FF3100404CFF /* Main.storyboard */; };
 		4510523F1C39FF3100404CFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4510523E1C39FF3100404CFF /* Assets.xcassets */; };
 		451052421C39FF3100404CFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451052401C39FF3100404CFF /* LaunchScreen.storyboard */; };
+		4510524C1C39FF6700404CFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510524A1C39FF6700404CFF /* AppDelegate.swift */; };
+		4510524D1C39FF6700404CFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4510524B1C39FF6700404CFF /* ViewController.swift */; };
+		4510524F1C39FF7400404CFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4510524E1C39FF7400404CFF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		451052341C39FF3100404CFF /* RichText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichText.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		451052371C39FF3100404CFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		451052391C39FF3100404CFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4510523C1C39FF3100404CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4510523E1C39FF3100404CFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		451052411C39FF3100404CFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		451052431C39FF3100404CFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4510524A1C39FF6700404CFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4510524B1C39FF6700404CFF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4510524E1C39FF7400404CFF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		451052361C39FF3100404CFF /* RichText */ = {
 			isa = PBXGroup;
 			children = (
-				451052371C39FF3100404CFF /* AppDelegate.swift */,
-				451052391C39FF3100404CFF /* ViewController.swift */,
-				4510523B1C39FF3100404CFF /* Main.storyboard */,
+				4510524A1C39FF6700404CFF /* AppDelegate.swift */,
+				4510524B1C39FF6700404CFF /* ViewController.swift */,
+				4510524E1C39FF7400404CFF /* Main.storyboard */,
+				451052491C39FF3E00404CFF /* Supporting Files */,
+			);
+			path = RichText;
+			sourceTree = "<group>";
+		};
+		451052491C39FF3E00404CFF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				4510523E1C39FF3100404CFF /* Assets.xcassets */,
 				451052401C39FF3100404CFF /* LaunchScreen.storyboard */,
 				451052431C39FF3100404CFF /* Info.plist */,
 			);
-			path = RichText;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +130,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4510524F1C39FF7400404CFF /* Main.storyboard in Resources */,
 				451052421C39FF3100404CFF /* LaunchScreen.storyboard in Resources */,
 				4510523F1C39FF3100404CFF /* Assets.xcassets in Resources */,
-				4510523D1C39FF3100404CFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +143,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4510523A1C39FF3100404CFF /* ViewController.swift in Sources */,
-				451052381C39FF3100404CFF /* AppDelegate.swift in Sources */,
+				4510524D1C39FF6700404CFF /* ViewController.swift in Sources */,
+				4510524C1C39FF6700404CFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4510523B1C39FF3100404CFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4510523C1C39FF3100404CFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		451052401C39FF3100404CFF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -249,10 +249,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RichText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.beeth0ven.RichText;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,6 +262,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RichText/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.beeth0ven.RichText;
